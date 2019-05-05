@@ -4,7 +4,7 @@
 
 # Создание отдельного класса Battery (перемещение в него всех атрибутов и методов аккумулятора),
 # Превращение экземпляра Battery в атрибут класса ElectricCar
-
+# Обязательная агрегация так как объект класса Battery прописан в коде класса как постоянный атрибут.
 
 
 class Car():
@@ -42,7 +42,7 @@ bat1.describe_battery()
 bat2 = Battery(150)
 bat2.describe_battery()
 
-
+# Экземпляр класса Battery является необязательным атрибутом при создании экземпляра ( есть значение по умолчанию).
 class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
