@@ -1,16 +1,16 @@
-# Запись в пустой файл
-# Режимы открытия файла  -  "r" - default, "w", "a" - присоединение, "r+" - чтение и запись.
-# "w" -  создает файл, если он не существует, записывает новую информацию стирая старую,
-# если такой файл существует
+file_path1  = "guest.txt"
+guest_name = input('Input your name, please: ')
 
-file_path  = "programming.txt"
-
-with open(file_path, "w") as file_object:
-    file_object.write("I love programming!")  # информация для записи в файл должна быть string.
-    file_object.write("\nPython is my favorite programming language!") # 2 строки склеились друг с другом.
-# for separation lines add \n in string of second line.
+with open(file_path1, "w") as file_object:
+    file_object.write(f"Your name is {guest_name}!")
 
 
-# Присоединение данных к файлу:
-with open(file_path, "a") as file_object:
-    file_object.write("\nI want to be the best python programmer in the Wordl!")
+file_path2 = "guests_book.txt"
+
+with open(file_path2, "a") as file_object:
+    while True:
+        guest_name = input('Input your name, please: ')
+        if guest_name == "q":
+            break
+        message = f"Hello, {guest_name}. It's nice to see you in our Hotel!\n"
+        file_object.write(message)

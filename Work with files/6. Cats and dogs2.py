@@ -1,18 +1,12 @@
 cats = "cats.txt"
 dogs = "dogs.txt"
 
-with open(cats, "w") as f_object:
-    f_object.write("Barsik,\nMurzik,\nMurlyka")
+pathes = [cats, dogs]
 
-with open(dogs, "w") as f_object:
-    f_object.write("Barbos,\nTobik\nAgbar")
-
-with open(cats) as f_object:
-    content = f_object.read()
-
-print(content)
-
-with open(dogs) as f_object:
-    content = f_object.read()
-
-print(content)
+for path in pathes:
+    try:
+        with open(path) as file_object:
+            content = file_object.read()
+        print(content+"\n")
+    except FileNotFoundError:
+        print(f"Sorry, but file {path} does not exist.")

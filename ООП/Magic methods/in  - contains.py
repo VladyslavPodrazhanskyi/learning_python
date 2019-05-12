@@ -1,4 +1,10 @@
+# Чтобы к классу можно было применить in для проверки наличия или отсутствие в
+# поле-контейнер того или иного элемента, в классе нужно прописать метод
+#  __contains__
 
+
+import uuid
+import random
 
 models = ("Skoda", "Lada", "Toyota", "Ford", "Lexus")
 towns = ("Rome", "Kiev", "Riga", "Boston", "London")
@@ -27,7 +33,7 @@ class Garage:
 
 
     def __contains__(self, item):
-        return item in self.members
+        return item in self.cars
 
 
 
@@ -36,8 +42,9 @@ my_garage = Garage(uuid.uuid4(), random.choice(towns), 20)
 my_garage.cars = cars
 # print(my_garage.number)
 
-for car in my_garage:
-    print(car)
 
+car1 = cars[5]
+car2 = Car(uuid.uuid4(), random.choice(models), random.randrange(1980, 2018))
 
-print(<__main__.Car object at 0x7f987e9ff940> in my_garage)
+print(car1 in my_garage)   # True
+print(car2 in my_garage)   # False

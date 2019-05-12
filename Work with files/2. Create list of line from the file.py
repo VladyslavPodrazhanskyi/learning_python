@@ -1,21 +1,20 @@
-# Read of whole file
+file_path  = "test_file.txt"
 
-file_name = "test_file.txt"   # file_path should be used in general
+with open(file_path) as file_object:
+    lines = file_object.readlines()  # read a line in the file and save in the lest (return list of lines)
 
-# with - context manager ( as file_objecr- allias for open(file_name).
-# open(file_path, "r") - returns object(file) with rights read, write...
-with open(file_name) as file_object:
-    contents = file_object.read()           # method read() -  returns content of whole file
-    print(contents)
-print("\n")
+# list lines is save after close file
 
-# Read separate lines of the file.
-with open(file_name) as file_object:
-    for line in file_object:   # in - запускает __contains__
-        print(line, end="")                       # который считывает построчно содержимое файла без метода read
+print(lines)
 
-# we have empty line after every line of the text.
-# так каждая строка файла заканчивается невидимым символом перехода на новую строку
-# функция print -  добавляет еще свой символ новой строки после вывода строки на экран.
-# настроив print - устраняем пустые лишние строки.
+# The same code without using method readlines()
 
+with open(file_path) as file_object:
+    lines = []
+    for line in file_object:
+        lines.append(line)
+
+
+
+for line in lines:
+    print(line, end="")

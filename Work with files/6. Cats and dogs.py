@@ -1,16 +1,18 @@
-file_path1  = "guest.txt"
-guest_name = input('Input your name, please: ')
+cats = "cats.txt"
+dogs = "dogs.txt"
 
-with open(file_path1, "w") as file_object:
-    file_object.write(f"Your name is {guest_name}!")
+with open(cats, "w") as f_object:
+    f_object.write("Barsik,\nMurzik,\nMurlyka")
 
+with open(dogs, "w") as f_object:
+    f_object.write("Barbos,\nTobik\nAgbar")
 
-file_path2 = "guests_book.txt"
+with open(cats) as f_object:
+    content = f_object.read()
 
-with open(file_path2, "a") as file_object:
-    while True:
-        guest_name = input('Input your name, please: ')
-        if guest_name == "q":
-            break
-        message = f"Hello, {guest_name}. It's nice to see you in our Hotel!\n"
-        file_object.write(message)
+print(content)
+
+with open(dogs) as f_object:
+    content = f_object.read()
+
+print(content)

@@ -1,20 +1,19 @@
-file_path  = "test_file.txt"
+# Вывести на экран содержимое файла одной строкой.
+
+file_path = "test_file.txt"
 
 with open(file_path) as file_object:
-    lines = file_object.readlines()  # read a line in the file and save in the lest (return list of lines)
+    lines = file_object.readlines()    # список строк, в каждой строке есть \n
 
-# list lines is save after close file
-
-print(lines)
-
-# The same code without using method readlines()
-
-with open(file_path) as file_object:
-    lines = []
-    for line in file_object:
-        lines.append(line)
+lines = [line.rstrip() for line in lines]  # создаем список строк без \n
+one_string = " ".join(lines)
+print(one_string)             # из списка строко создаем строку, слова разделяем пробелами
 
 
+# Альтернативное решение:
 
-for line in lines:
-    print(line, end="")
+# one_string = ""
+# for line in lines:
+#     one_string += line.rstrip() + " "
+#
+# print(one_string)

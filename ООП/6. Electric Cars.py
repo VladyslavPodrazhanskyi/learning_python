@@ -53,7 +53,9 @@ class ElectricCar(Car):
 # Функция super() в строке  — специальная функция, которая помогает Python связать потомка с родителем.
 # Эта строка приказывает Python вызвать метод  __init__() класса, являющегося родителем ElectricCar ,
 # в результате чего экземпляр ElectricCar получает все атрибуты класса-родителя
-        super().__init__(make, model, year)
+
+        super().__init__(make, model, year)  # or Car.__init__(self, make, model, year)
+
 
 # Определение атрибутов и методов для класса-потомка:
         self.battery_power  = 70
