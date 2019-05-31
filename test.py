@@ -1,2 +1,1 @@
-a = 'kjldfj'
-print(float(a))
+print(int(1.5))

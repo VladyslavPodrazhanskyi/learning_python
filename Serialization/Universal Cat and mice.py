@@ -35,10 +35,10 @@ for mouse in mice_list:
 test_mouse = Mouse()
 print(test_mouse.age, test_mouse.weight)
 
-mouse_str = json.dumps(test_mouse, default=mouse_default)
+mouse_str = json.dumps(test_mouse, default=mouse_to_dict)
 print(mouse_str)
 
-restored_mouse = json.loads(mouse_str, object_hook=mouse_hook)
+restored_mouse = json.loads(mouse_str, object_hook=from_dict_mouse)
 print(type(restored_mouse), restored_mouse.age, restored_mouse.weight)
 print(restored_mouse.age == test_mouse.age and restored_mouse.weight == test_mouse.weight)
 
@@ -60,32 +60,39 @@ pprint(my_cat.mice)
 
 
 
-def cat_default(obj):
+def cat_to_dict(obj):
     data = {"name": obj.name, "age": obj.age, "mice": obj.mice}
-    if obj.mice:
-        serialized_mice = [json.dumps(mouse, default=mouse_default) for mouse in obj.mice]
-        data["mice"] = serialized_mice
+    data["mice"] = [mouse_to_dict(mouse) for mouse in obj.mice]
     return data
 
-def cat_hook(data):
+def from_dict_cat(data):
     cat_instance = Cat()
     cat_instance.name = data.get("name", random.choice(cat_names))
     cat_instance.age = data.get("age", random.randint(0, 22))
-    if data["mice"]:
-        restored_mice = [json.loads(mouse, object_hook=mouse_hook) for mouse in data["mice"]]
-        cat_instance.mice = restored_mice
-    else:
-        cat_instance.mice = []
+    cat_instance.mice = [from_dict_mouse(mouse) for mouse in data["mice"]]
     return cat_instance
 
-my_cat_str = json.dumps(my_cat, default=cat_default)
-pprint(my_cat_str)
+kotic = from_dict_cat({"name": "Barsik", "age": 5,
+                       "mice": [{"age": 5, "weight": 40}, {"age": 12, "weight": 55}]})
+print(kotic, kotic.name)
+print(kotic.mice)
 
-restored_cat = json.loads(my_cat_str, object_hook=cat_hook)
-print(restored_cat)
-print(restored_cat.name, my_cat.name)
-print(restored_cat.age, my_cat.age)
-pprint(restored_cat.mice)
 
-for mouse in restored_cat.mice:
-    print(type(mouse), mouse.weight, mouse.age)
+kotic_str = json.dumps(kotic, default=cat_to_dict)
+# restored_kotic_ = json.loads(kotic_str, object_hook=from_dict_cat) # hook не работает с вложенными мышами
+restored_kotic = from_dict_cat(json.loads(kotic_str))
+# my_cat_str = json.dumps(my_cat, default=cat_to_dict)
+# pprint(my_cat_str)
+#
+# # restored_cat = json.loads(my_cat_str, object_hook=from_dict_cat)
+# restored_cat_dict = json.loads(my_cat_str)
+# print(restored_cat_dict)
+# # restore_cat = from_dict_cat(restored_cat_dict)
+# # print(restore_cat, restore_cat.mice)
+# print(restored_cat)
+# print(restored_cat.name, my_cat.name)
+# print(restored_cat.age, my_cat.age)
+# pprint(restored_cat.mice)
+#
+# for mouse in restored_cat.mice:
+#     print(type(mouse), mouse.weight, mouse.age)

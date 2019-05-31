@@ -1,0 +1,10 @@
+PyDev console: starting.
+Python 3.7.3 (default, Mar 26 2019, 00:55:50)
+[GCC 7.3.0] on linux
+from jinja2 import Template      -  достаточно ввести один раз и консоль запоминает импорт.
+t = Template("Hello, {{something}}!")
+t.render(something="World")
+'Hello, World!'
+t = Template("My list: {% for i in range(10) %}{{i}}{% endfor %}")
+t.render()
+'My list: 0123456789'

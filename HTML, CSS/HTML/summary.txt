@@ -1,0 +1,26 @@
+1. HTML attributes
+
+All HTML elements can have attributes
+The title attribute provides additional "tool-tip" information
+The href attribute provides address information for links
+The width and height attributes provide size information for images
+The alt attribute provides text for screen readers
+At W3Schools we always use lowercase attribute names
+At W3Schools we always quote attribute values with double quotes
+
+Full list of attributes
+https://www.w3schools.com/tags/ref_attributes.asp
+
+2. HTML headings
+
+3. HTML Paragraphs
+
+HTML Tag Reference
+W3Schools' tag reference contains additional information about HTML elements and their attributes.
+
+Tag	Description
+<p>	Defines a paragraph
+<br>	Inserts a single line break
+<pre>	Defines pre-formatted text
+
+https://www.w3schools.com/tags/default.asp
