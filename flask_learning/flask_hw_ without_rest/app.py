@@ -2,6 +2,11 @@ from flask import Flask, request, render_template, redirect, url_for, abort
 
 app = Flask(__name__)
 
+print(__name__)
+for k, v in app.config.items():
+    print(f'Key: {k}, Value: {v}')
+    print('')
+
 vegetables = ["potato", "cucumber", "carrot", "tomatto"]
 fruites = ["apricot", "cherry", "grapes", "apple"]
 
@@ -59,4 +64,5 @@ def error_404(error):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+

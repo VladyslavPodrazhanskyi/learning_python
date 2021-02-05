@@ -20,3 +20,14 @@ while True:
     if num2 == "q":
         break
     divide_num(num1, num2)
+
+# try:
+#     a = float(input())
+#     print(a**3)
+# except ValueError:
+#     print('input numbers, not the text')
+# else:                          # only if there is no exceptions
+#     print('else testing')
+# finally:                       # at any case if code is workable
+#     print('finally testing')
+# print('end block testing')      # at any case if code is workable
