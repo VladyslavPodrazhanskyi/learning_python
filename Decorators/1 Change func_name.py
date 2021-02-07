@@ -10,3 +10,7 @@ f = say_hello
 del say_hello
 
 f()
+
+
+
+

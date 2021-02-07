@@ -2,7 +2,7 @@ class Test:
     def __init__(self):
         pass
 
-    def double(self, x):      # имеет только один неявный аргумент  - self - instanc of the class
+    def double(self, x):      # имеет только один неявный аргумент  - self - instance of the class
         print("Multiple 2")   # доступ только из инстанса, нет доступа из класса.
         return x*2
 
@@ -70,5 +70,12 @@ print(my_test.double)   # <bound method Test.double of <__main__.Test object at 
 print(my_test.triple)   # <bound method Test.triple of <class '__main__.Test'>>
 print(my_test.quad)     # <function Test.quad at 0x7f318f632ea0>
 
+print('########################################################################')
+
+
+
+test1 = Test()
+res = test1.quad(435)
+print(res)
 
 

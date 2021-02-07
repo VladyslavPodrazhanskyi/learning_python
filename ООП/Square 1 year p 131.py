@@ -8,7 +8,7 @@ class Square:
     def __repr__(self):
         return '{0} на {0} на {0} на {0}'.format(self.side)
     
-    def equal_check(self,other):
+    def equal_check(self, other):
         if self is other:
             return True
         else:
