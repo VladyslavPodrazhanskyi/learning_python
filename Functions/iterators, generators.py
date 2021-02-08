@@ -2,6 +2,24 @@
 # итерируемый (iterable) - объект по которому можно итерироваться
 # итерация  -  каждое действие по циклу.
 
+class CustomsIterator:
+    def __init__(self, start=1):
+        self.num = start
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        num = self.num
+        self.num += 1
+        if num > 145:
+            raise StopIteration
+        return num
+
+iterator = CustomsIterator(140)
+
+for i in range(20):
+    print(next(iterator))
 
 
 

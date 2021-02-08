@@ -19,6 +19,7 @@ print(separator)
 
 # Block 2
 
+
 @decorator
 def decorated_func():
     return str(1) + "+" + str(1)
