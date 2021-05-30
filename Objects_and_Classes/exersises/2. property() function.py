@@ -11,3 +11,4 @@ class Person:
 p1 = Person('Kolya')
 p1.set_name('Vasya')
 print(p1.get_name())
+print(p1.mro)

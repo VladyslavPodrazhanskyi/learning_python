@@ -1,4 +1,17 @@
-data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for i in range(len(data)):
-    print(data[i])
-    del data[i]
+class C:
+    def __init__(self):
+        self.__x = 0
+
+    @property
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, v):
+        self.__x = v
+
+    @x.deleter
+    def x(self):
+        del self.__x
+
+
