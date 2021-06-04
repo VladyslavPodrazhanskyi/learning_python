@@ -1,18 +1,19 @@
-def binary_search(sorted_data, value) -> int:
-    if value not in sorted_data:
-        return None
-    start, end = 0, len(sorted_data) - 1
-    while True:
-        cur = (start + end) // 2
-        if sorted_data[cur] > value:
-            end = cur
-        elif sorted_data[cur] < value:
-            start = cur
+def binary_search(data, value):
+    mid = len(data) // 2
+    low = 0
+    high = len(data) - 1
+    while data[mid] != value and low <= high:
+        if value > data[mid]:
+            low = mid + 1
         else:
-            return cur
+            high = mid - 1
+        mid = (low + high) // 2
+    if low > high:
+        return False
+    return mid
 
 
+data = list(range(0, 20, 2))
 
-data = [i for i in range(123)]
-
-print(binary_search(data, 151))
+for el in data:
+    print(binary_search(data, el))

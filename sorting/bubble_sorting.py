@@ -13,6 +13,8 @@ def bubble_sorting(data):
 
 cur_data = [1, 3, 1, 120, 2, 4, 17, 16, 7, 4, 265, 11, 1, 1, 1, 1, 1, 500, 500, 500]
 
-print(bubble_sorting(cur_data))
+data = [1, 4, 3, 12, 11, 0, -1]
+
+print(bubble_sorting(data))
 
 
