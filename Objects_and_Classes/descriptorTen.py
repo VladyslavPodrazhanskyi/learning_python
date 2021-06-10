@@ -3,7 +3,7 @@ class Ten:
         return 10
 
     def __set__(self, obj, value):
-        raise AttributeError
+        raise AttributeError("Cannot change the Value!")
 
 
 class A:
@@ -18,6 +18,9 @@ print(a.x)
 print(a.y)
 a.x = 20
 print(a.x)
-a.y = 20
+# a.y = 20
 
-# print(a.y)
+setattr(a, "y", 50)
+print(a.y)
+
+
