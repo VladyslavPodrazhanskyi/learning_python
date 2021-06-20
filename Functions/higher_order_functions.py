@@ -85,7 +85,7 @@ def double_sum(a, b):
     return (a + b) * 2
 
 
-print(numbers)
+print(numbers)  # numbers = [10, 15, 21, 33, 42, 55]
 print(reduce(quarter_sum, numbers))
 print(reduce(lambda a, b: (a + b) / 4, numbers))
 print(reduce(double_sum, numbers))
