@@ -1,3 +1,12 @@
+'''
+Sometimes, you’ll want to make functions return different values
+when you call them more than once or even raise exceptions.
+You can do this using .side_effect.
+
+side_effect defines what happens when you call the mocked function
+'''
+
+
 import unittest
 from unittest.mock import Mock
 from requests.exceptions import Timeout

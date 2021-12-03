@@ -1,55 +1,16 @@
-union_dict = {
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
-    9: "nine"
-}
+def bubble_sort(data):
+    for i in range(len(data)):
+        # stop_sort = True
+        for k in range(len(data) - i - 1):
+            if data[k] > data[k + 1]:
+                data[k], data[k + 1] = data[k + 1], data[k]
 
-ten_twenty = {
-    10: "ten",
-    11: "eleven",
-    12: "twelve",
-    13: "thirteen",
-    14: "fourteen",
-    15: "fifteen",
-    16: "sixteen",
-    17: "seventeen",
-    18: "eighteen",
-    19: "nineteen"
-}
-
-ten_verbose = {
-    2: "twenty",
-    3: "thirty",
-    4: "forty",
-    5: "fifty",
-    6: "sixty",
-    7: "seventy",
-    8: "eighty",
-    9: "ninty"
-}
+        # if stop_sort:
+        #     break
+        print(i)
+    return data
 
 
-def verbose_three(three_num):
-    hundred = three_num // 100
-    tens = three_num // 10 % 10
-    units = three_num % 10
-    if tens == 1:
-        last_two = three_num % 100
-        return f"{union_dict[hundred]} hundred {ten_twenty[last_two]}"
-    return f"{union_dict[hundred]} hundred {ten_verbose[tens]} {union_dict[units]}"
+data = [4, 2, 6, -17, 1]
 
-
-def verbose_number(number):
-    first_three = number // 1000
-    second_three = number % 1000
-    return f"{verbose_three(first_three)} thousand {verbose_three(second_three)}"
-
-
-if __name__ == '__main__':
-    print(verbose_number(765432))
+print(bubble_sort(data))
