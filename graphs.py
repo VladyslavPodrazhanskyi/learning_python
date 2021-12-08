@@ -1,4 +1,4 @@
-from collections import deque
+from col1.collections import deque
 
 
 def person_is_seller(person):

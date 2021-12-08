@@ -1,4 +1,4 @@
-from collections import deque
+from col1.collections import deque
 
 fifo_queue = deque()
 

@@ -1,4 +1,4 @@
-from collections import namedtuple
+from col1.collections import namedtuple
 
 Token = namedtuple("Token", ("addition", "multiplication"))
 func_tuple = Token(lambda x, y: x + y, lambda x, y: x * y)
