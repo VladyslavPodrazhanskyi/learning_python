@@ -22,6 +22,7 @@ When you run your test, you’ll see that get() forwards its arguments to .log_r
 then accepts the return value and returns it as well
 '''
 
+
 class TestCalendar(unittest.TestCase):
     def log_request(self, url):
         # Log a fake request for test output purposes

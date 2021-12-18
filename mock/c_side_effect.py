@@ -4,6 +4,7 @@ when you call them more than once or even raise exceptions.
 You can do this using .side_effect.
 
 side_effect defines what happens when you call the mocked function
+Side effect can be iterable, function, or Exception
 '''
 
 import requests

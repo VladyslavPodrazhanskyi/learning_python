@@ -12,7 +12,7 @@ def is_weekday():
     return 0 <= today.weekday() < 5
 
 
-assert is_weekday()  # result depends on when you run the test
+# assert is_weekday()  # result depends on when you run the test
 
 # create predictable resuls with mock:
 
