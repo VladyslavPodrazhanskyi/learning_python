@@ -7,7 +7,8 @@ from random import randint
 # Объект map -  является итератором.
 # 1.1 map with lambda:  map(lambda item: item[] expression, iterable)
 
-numbers = [10, 15, 21, 33, 42, 55]
+# numbers = [10, 15, 21, 33, 42, 55]
+numbers = [10]
 
 mapped_numbers = list(map(lambda x: x + x * 3, numbers))
 print(mapped_numbers)

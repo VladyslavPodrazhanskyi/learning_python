@@ -7,6 +7,9 @@ authors = ["VladyslavPodrazhanskyi <vladislav304304@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "^2.26.0"
+flake8 = "^4.0.1"
+boto3 = "^1.20.31"
+pyspark = "^3.2.0"
 
 [tool.poetry.dev-dependencies]
 
