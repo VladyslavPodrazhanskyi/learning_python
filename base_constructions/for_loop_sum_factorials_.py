@@ -2,8 +2,7 @@ def sum_fact(n):
     sum = 0
     p_fact = 1
     for i in range(1, n + 1):
-
-    return sum
+        return sum
 
 print(sum_fact(int(input())))
 
