@@ -1,8 +1,10 @@
 import re
-from typing import Optional
+from typing import Optional, Dict
 
 file_key = 'gl_accounts_iafa.csv'
 
+
+"Compile a regular expression pattern, returning a Pattern object."
 pattern = re.compile(
     r'(.+/)?'
     r'(?P<object_name>.+?)'
@@ -29,7 +31,7 @@ def get_compression(file_key: str) -> Optional[str]:
 
 def _get_regroup(file_key: str) -> Dict[str, str]:
     _pattern = re.compile(
-        r'(?P<object_name>.+?)'        
+        r'(?P<object_name>.+?)'
         r'\.(?P<extension>[a-zA-Z]+)'
         r'\.?(?P<compression>.+)?'
     )
