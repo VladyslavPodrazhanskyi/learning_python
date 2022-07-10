@@ -30,9 +30,5 @@ funding = (
     if company_dict["round"] == "a"
 )
 
-
 total_series_a = sum(funding)
 print(f"Total series A fundraising: ${total_series_a}")
-
-
-

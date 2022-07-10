@@ -9,10 +9,9 @@ def generator():
 
 
 g = generator()
-
 print(g.send(None))
 print(g.send(None))
-print(g.send(5))
+print(g.send(5))  # without assign is equal to g.send(None) and next(g)
 
 for each in g:
     time.sleep(1)

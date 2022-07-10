@@ -3,16 +3,20 @@ If any input needs to be changed every time generator is called,
 ‘send’ method can be used to pass them.
 The ‘yield’ statement returns the input passed via the ‘send’ method.
 
+Change last yield to sending value
+if x is assigned to the previous yield!!!!
+
 """
+
 
 def generator1():
     x = 5
     while True:
-        x = yield x * 10  # don't get result (x is None now) but send it for processing with function send()
+        x = yield x * 10
 
 
 g1 = generator1()
-print(next(g1)) # print(g.send(None))
+print(next(g1))  # print(g.send(None))
 print(g1.send(3))
 print(g1.send(0.1))
 print(g1.send(35))
@@ -26,9 +30,11 @@ def generator2():
 
 
 g2 = generator2()
-print(next(g2))     # None
+print(next(g2))  # None
 print(g2.send(23))  # 230
-print(next(g2))     # None
+print(next(g2))  # None
+print(g2.send(17))  # 170
+print(g2.send(17))  # None
 
 
 def greeting_const(name):
@@ -52,5 +58,3 @@ gs = greeting_send("Alice")
 print(next(gs))
 print(next(gs))
 # print(gs.send())
-
-

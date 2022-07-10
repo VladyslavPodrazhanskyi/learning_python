@@ -1,15 +1,13 @@
 from sys import getsizeof
 
-gen_range = (i**2 for i in range(1, 20))
+gen_range = (i ** 2 for i in range(1, 20))
 
 print(next(gen_range))
 
 for each in gen_range:
     print(each)
 
-
-# print(next(gen_range))
-print(getsizeof(gen_range))
+print("size: gen_range():", getsizeof(gen_range))
 
 
 def gen_without_loop():
@@ -24,5 +22,3 @@ def gen_without_loop():
 my_gen = gen_without_loop()
 for each in my_gen:
     print(each)
-
-
