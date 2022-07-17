@@ -31,7 +31,5 @@ human.temperature = -300
 # call descriptor which validate value instead of __dict__ look up
 
 print(human.__dict__)  # {'_temperature': 37}
-print(vars(human))     # {'_temperature': 37}
-print(dir(human))      # ['_temperature', 'get_temperature', 'set_temperature', 'temperature', 'to_fahrenheit' ...]
-
-
+print(vars(human))  # {'_temperature': 37}
+print(dir(human))  # ['_temperature', 'get_temperature', 'set_temperature', 'temperature', 'to_fahrenheit' ...]
