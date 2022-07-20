@@ -1,3 +1,12 @@
+"""
+1. syntaxt error: e.g. lack of )
+2. asserts
+3. exceptions
+4. try except else finally
+5. customs exceptions, raise
+"""
+
+
 def divide_num(num1, num2):
     try:
         res = float(num1)/float(num2)

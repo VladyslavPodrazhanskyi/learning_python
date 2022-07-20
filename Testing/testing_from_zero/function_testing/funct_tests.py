@@ -1,6 +1,5 @@
 import unittest
-
-from function_testing.func_for_testing import random_list
+from Testing.testing_from_zero.function_testing.func_for_testing import random_list
 
 
 class ListTest(unittest.TestCase):

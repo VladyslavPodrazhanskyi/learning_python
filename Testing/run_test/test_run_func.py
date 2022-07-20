@@ -1,18 +1,22 @@
-from run_test.run_func import run_days
 import unittest
+
+
+def sum_cube(first: int, second: int) -> int:
+    return first ** 3 + second ** 3
 
 
 class TestRunDays(unittest.TestCase):
 
     def test_equal(self):
-        self.assertEqual(run_days(10, 20), 9, 'should be 9')
-        self.assertEqual(run_days(10, 30), 13, 'should be 13')
-        self.assertEqual(run_days(1, 1000), 74, 'should be 74')
-        self.assertEqual(run_days(100, 101), 2, 'should be 2')
-        self.assertEqual(run_days(100, 121), 3, 'should be 3')
+        self.assertEqual(sum_cube(1, 2), 9, 'should be 9')
+        self.assertEqual(sum_cube(2, 3), 35, 'should be 35')
+        self.assertEqual(sum_cube(1, 10), 1001, 'should be 1001')
+        self.assertEqual(sum_cube(2, 2), 16, 'should be 16')
+        self.assertEqual(sum_cube(3, 3), 54, 'should be 54')
 
     def test_not_equal(self):
-        self.assertNotEqual(run_days(10, 20), 100, 'should be 9')
+        self.assertNotEqual(sum_cube(10, 20), 100, 'should be 9000')
+
 
 if __name__ == '__main__':
     unittest.main()

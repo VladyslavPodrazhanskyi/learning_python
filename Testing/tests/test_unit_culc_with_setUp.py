@@ -2,8 +2,8 @@
 # Запуск отдельного метода
 # python -m unittest -v test_unit_culc.TestCulc.test_red
 
-from Cursor_lecture_1.culc import add, red, mult, div
 import unittest
+from Testing.tests.culc import add, red, mult, div
 
 
 class TestCulc(unittest.TestCase):

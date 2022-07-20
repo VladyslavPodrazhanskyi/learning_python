@@ -1,5 +1,8 @@
 import unittest
-from src import average_value
+
+
+def average_value(*args):
+    return sum(args) / len(args)
 
 
 class TestAverage(unittest.TestCase):

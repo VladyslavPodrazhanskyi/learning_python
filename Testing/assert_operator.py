@@ -23,6 +23,8 @@
 # программы.
 
 
-my_list = [i for i in range(25) if i%3 != 0]
+my_list = [i for i in range(25) if i % 3 != 0]
 
-print(assert len(my_list) > 2)
+# my_list = []
+
+assert len(my_list) > 2, 'len of list <= 2'
