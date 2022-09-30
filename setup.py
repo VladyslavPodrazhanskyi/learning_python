@@ -12,7 +12,7 @@ setup(
         'boto3==1.16.38',
         'fake-awsglue',
         'pyspark~=2.4.3',
-        'joblib==0.17.0',
+        'joblib==1.2.0',
         'pytest==6.2.5',
         'pyspark-test'
     ],
