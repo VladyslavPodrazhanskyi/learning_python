@@ -18,6 +18,7 @@ words = [
 print([word for word in words if word.get('word', '') == 'w2'][0].get('word'))
 
 # todo: analyze dynamical import
+
 # try:
 #     module = importlib.import_module(__name__)
 #     strategy = getattr(module, strategy_name)
