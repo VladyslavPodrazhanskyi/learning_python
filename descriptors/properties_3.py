@@ -29,7 +29,7 @@ class Celsius:
             raise ValueError("Temperature below -273.15 is not possible")
         self._temperature = value
 
-    # descriptor - override line nine self.temperature = temperature
+    # descriptor - override line  self.temperature = temperature
     # by calling setter
     temperature = property(get_temperature, set_temperature)
 

@@ -7,6 +7,7 @@ import json
 
 response = requests.get("https://api.github.com")    # <Response [200]>
 
+print(type(response.json()))
 print(response.status_code)
 
 # Content
@@ -32,6 +33,8 @@ response = requests.get(
     params={'q': 'requests+language:python'},
     headers={'Accept': 'application/vnd.github.v3.text-match+json'},
 )
+
+print(type(response))
 
 json_response = response.json()
 

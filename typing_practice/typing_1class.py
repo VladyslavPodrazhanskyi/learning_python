@@ -6,6 +6,17 @@ There is a correspondence between classes and types.
 For example, all instances of the Card class together form the Card type.
 To use classes as types you simply use the name of the class.
 
+
+To start with type checking, you need to get a type checker.
+The easiest way to start is with mypy (http://mypy-lang.org/);
+Other options:
+pytype (from Google),
+Pyright/Pylance (from Microsoft, bundled with VS
+Code),
+and Pyre (from Facebook) for alternatives.
+PyCharm also bundles a type checking tool out of the box. Refer to your editor/type-checker documentation for
+installation instructions.
+
 """
 
 # game.py

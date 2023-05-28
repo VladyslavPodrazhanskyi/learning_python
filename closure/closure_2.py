@@ -10,6 +10,7 @@
 
 """
 
+
 def fun1(a):
     x = a * 3
 
@@ -18,4 +19,3 @@ def fun1(a):
         return b + x
 
     return fun2
-
