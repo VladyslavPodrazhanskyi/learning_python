@@ -7,6 +7,18 @@ i Rеprеsеnts signеd intеgеr оf sizе 2 bytеs
 I Rеprеsеnts unsignеd intеgеr оf sizе 2 bytеs
 f Rеprеsеnts flоаting pоint оf sizе 4 bytеs
 d Rеprеsеnts flоаting pоint оf sizе 8 bytеs
+
+Python’s array module provides space-efficient storage of basic C-style data types
+ like bytes, 32-bit integers, floating-point numbers, and so on.
+ Arrays created with the array.array class are mutable
+ and behave similarly to lists except for one important difference:
+ they’re typed arrays constrained to a single data type.
+
+Because of this constraint, array.array objects with many elements
+are more space efficient than lists and tuples.
+The elements stored in them are tightly packed, and this can be useful
+if you need to store many elements of the same type.
+
 """
 
 import array

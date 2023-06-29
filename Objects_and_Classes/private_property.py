@@ -1,4 +1,12 @@
+'''
+Fields stored on classes are mutable,
+and new fields can be added freely, which you may or may not like.
+It’s possible to provide more access control and to create read-only fields using the @property decorator,
+but once again, this requires writing more glue code.
+'''
+
 from sys import getsizeof
+
 
 class Dog:
     def __init__(self, petname):
@@ -19,7 +27,6 @@ class Dog:
 
 class Poodle(Dog):
     print(locals())
-
 
 
 d1 = Dog('Barbos')

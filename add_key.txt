@@ -1,0 +1,2 @@
+ssh-add ~/.ssh/dir_ssh_key_2023_05_28/id_rsa
+

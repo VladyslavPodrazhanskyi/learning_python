@@ -1,6 +1,33 @@
+"""
+collections.Counter: Multisets
+
+The collections.Counter class in the Python standard library implements
+a multiset, or bag,
+type that allows elements in the set to have more than one occurrence.
+
+This is useful if you need to keep track of not only
+if an element is part of a set, but also how many times
+it’s included in the set
+"""
+
+
 from collections import Counter, defaultdict
 
 
+inventory = Counter()
+goods = {"apple": 5, "beer": 12}
+inventory.update(goods)
+
+print(inventory)  # Counter({'beer': 12, 'apple': 5})
+
+new_goods = {"pear": 7, "beer": 4}
+inventory.update(new_goods)
+
+print(inventory)  # Counter({'beer': 16, 'pear': 7, 'apple': 5})
+print(len(inventory))  # 3
+print(sum(inventory.values()))  # 28
+
+#########################
 words = ['spam', 'egg', 'spam', 'counter', 'counter', 'counter']
 
 
@@ -34,3 +61,4 @@ print(c | d)  # max Counter({'d': 16, 'c': 9, 'a': 5, 'b': 3})
 # only positive result
 print(c + d)  # Counter({'c': 14, 'a': 9, 'd': 4})
 print(c - d)  # Counter({'b': 6})
+

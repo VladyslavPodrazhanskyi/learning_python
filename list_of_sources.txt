@@ -1,0 +1,26 @@
+execution visualization
+https://pythontutor.com
+
+https://realpython.com/search?q=linked+list
+https://realpython.com/python-data-structures/
+python vs java
+https://realpython.com/oop-in-python-vs-java/
+https://python.plainenglish.io/top-8-algorithms-every-programmer-should-know-93c826267938
+
+Design patterns:
+https://python-patterns.guide/
+
+async and other tutorials
+https://superfastpython.com/tutorials/
+
+glossary python documentation:
+https://docs.python.org/3/glossary.html#term-hashable
+
+arguments vs parameters:
+https://docs.python.org/3/faq/programming.html#faq-argument-vs-parameter
+
+typing control:
+mypy - see typing practice
+
+time complexity python:
+https://wiki.python.org/moin/TimeComplexity
