@@ -9,7 +9,7 @@ python = "^3.9"
 requests = "^2.26.0"
 flake8 = "^4.0.1"
 boto3 = "^1.20.31"
-pyspark = "^3.2.0"
+pyspark = "^3.2.2"
 
 [tool.poetry.dev-dependencies]
 
