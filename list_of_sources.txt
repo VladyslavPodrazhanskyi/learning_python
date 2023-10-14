@@ -1,8 +1,66 @@
+1) статья методы решения алгоритмических задача:
+https://habr.com/ru/articles/713498/
+
+
+
+
+
+https://s12.skladchinabiz.biz/threads/kobezzza-channel-master-klass-po-resheniju-zadach-s-leetcode-andrej-kobec.233266/
+https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/
+https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/678/sql-data-structure/4352/
+https://s12.skladchinabiz.biz/threads/leetcode-com-leetcodes-interview-crash-course-data-structures-and-algorithms.224494/
+
+
+https://habr.com/ru/articles/713498/
+https://ru.hexlet.io/blog/posts/grokaem-algoritmy-gayd-po-algoritmam-dlya-teh-komu-slozhno-reshat-zadachi
+https://interviewnoodle.com/grokking-leetcode-a-smarter-way-to-prepare-for-coding-interviews-e86d5c9fe4e1
+
+
+2) grocking algorythm(закончить книгу):
+
+loop -> recursion
+recursion -> loop
+quick sort
+graph
+сортировка в ширину
+shell sort
+
+3) Привычка - решать в среднем 7 задач в неделю (code leet)
+изучать алгоритмы 1 раз в неделю.
+
+4) Изучать SQL - 2 раза в неделю.
+
+5) AWS developer -  подготовка к аттестации без отвлечений.
++ Docker
++ Networking
++ SSH
++ Code base  -  максимально быстрое решение задач на проекте,
+выделять рабочее время для обучения.
+
+Вести переговоры по ЗП от 3 500 USD (80 000 крон).
+
+
+6) После аттестации AWS :
+Spark + Kafka + Databricks
+Теория python + big data
+DBs сертификация.
+
+Получать senior data engineer.
+
+
+
+
+6) После аттестации.
+
+
 execution visualization
 https://pythontutor.com
 
-https://realpython.com/search?q=linked+list
+
 https://realpython.com/python-data-structures/
+https://realpython.com/python-heapq-module/#data-structures-heaps-and-priority-queues
+https://realpython.com/search?q=linked+list
+
 python vs java
 https://realpython.com/oop-in-python-vs-java/
 https://python.plainenglish.io/top-8-algorithms-every-programmer-should-know-93c826267938
@@ -24,3 +82,39 @@ mypy - see typing practice
 
 time complexity python:
 https://wiki.python.org/moin/TimeComplexity
+
+LEGB
+https://realpython.com/python-scope-legb-rule/
+
+regular expressions:
+https://realpython.com/regex-python/#conclusion
+https://realpython.com/regex-python-part-2/
+
+Python list implementation
+http://www.laurentluce.com/posts/python-list-implementation/
+
+for loop and iterators:
+https://webdevblog.ru/kak-rabotaet-cikl-for-v-python/
+
+context manager
+
+notebook
+https://event.on24.com/eventRegistration/console/apollox/mainEvent?&eventid=4168073&sessionid=1&username=&partnerref=&format=fhvideo1&mobile=&flashsupportedmobiledevice=&helpcenter=&key=EE3C1BF71D26CF68EC60583FD866A706&newConsole=true&nxChe=true&newTabCon=true&consoleEarEventConsole=false&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=621197323&contenttype=A&mediametricsessionid=532589569&mediametricid=5877431&usercd=621197323&mode=launch
+integration with pycharm
+https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html#editor
+markdown cheat sheet
+https://ingeh.medium.com/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed
+parallel processin in jupiter notebooks:
+https://habr.com/ru/articles/744066/
+
+descriptors:
+https://www.youtube.com/watch?v=tBps4OeK9-0
+
+data warehouse
+https://www.linkedin.com/learning/introduction-to-data-warehouses/introduction-to-data-warehouses?u=2113185
+big data roadmap
+https://medium.com/@uzmanali/intermediate-data-engineering-road-map-2023-big-data-cloud-computing-and-more-b6979368f45d
+
+
+config in python
+https://www.doppler.com/blog/environment-variables-in-python

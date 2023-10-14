@@ -22,10 +22,11 @@ print(inventory)  # Counter({'beer': 12, 'apple': 5})
 
 new_goods = {"pear": 7, "beer": 4}
 inventory.update(new_goods)
+inventory.update(['beer', 'beer', 'apple'])
 
-print(inventory)  # Counter({'beer': 16, 'pear': 7, 'apple': 5})
+print(inventory)  # Counter({'beer': 18, 'pear': 7, 'apple': 6})
 print(len(inventory))  # 3
-print(sum(inventory.values()))  # 28
+print(sum(inventory.values()))  # 31
 
 #########################
 words = ['spam', 'egg', 'spam', 'counter', 'counter', 'counter']

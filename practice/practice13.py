@@ -1,5 +1,9 @@
 from decimal import Decimal
 
+import practice21
+
+print(practice21.__name__ == 'practice21')
+print(type(practice21.__name__))
 
 def float_to_decimal(number: float) -> Decimal:
     # return Decimal(str(number))

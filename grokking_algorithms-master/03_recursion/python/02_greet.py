@@ -13,4 +13,5 @@ def greet(name):
     bye()
 
 
-greet("adit")
+if __name__ == '__main__':
+    greet("adit")
